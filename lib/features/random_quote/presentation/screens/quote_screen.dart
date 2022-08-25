@@ -1,5 +1,5 @@
-import 'package:clean_arch1/config/routes/app_routes.dart';
-import 'package:clean_arch1/features/favorite_quote/presentation/screens/favorite_quote.dart';
+import 'package:clean_arch1/core/utils/app_strings.dart';
+import 'package:clean_arch1/features/random_quote/presentation/widgets/quote_content.dart';
 import 'package:flutter/material.dart';
 
 class QuoteScreen extends StatefulWidget {
@@ -10,21 +10,24 @@ class QuoteScreen extends StatefulWidget {
 }
 
 class _QuoteScreenState extends State<QuoteScreen> {
+
+  Widget _buildBodyContext(){
+    return Column(
+      children:const [
+        QuoteContent()
+      ],
+    );
+  }
+
+  final appBar = AppBar(
+    title:const Text(AppStrings.appName),
+  );
+
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
-      body: Center(
-        child: InkWell(
-          onTap:()=>Navigator.pushNamed(context, Routes.favoriteQuoteRoute),
-          child:const Text(
-            'Quote',
-            style: TextStyle(
-              color: Colors.black,
-              fontSize: 25,
-            ),
-          ),
-        ),
-      ),
-    );
+    return Scaffold(
+      appBar: appBar,
+      body: _buildBodyContext(),
+    ) ;
   }
 }

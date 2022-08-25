@@ -14,6 +14,7 @@ dependencies:
     sdk: flutter
   bloc:
   flutter_bloc:
+  toast: ^0.3.0
 
   cupertino_icons: ^1.0.2
 
@@ -27,8 +28,8 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  assets:
-    - assets/images
+#  assets:
+#    - assets/images
 
 
   fonts:

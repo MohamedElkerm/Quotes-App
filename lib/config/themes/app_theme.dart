@@ -4,6 +4,16 @@ import 'package:flutter/material.dart';
 
 ThemeData appTheme(){
   return ThemeData(
+    appBarTheme:const AppBarTheme(
+      centerTitle: true,
+      backgroundColor: Colors.transparent,
+      elevation: 0,
+      titleTextStyle: TextStyle(
+        color: Colors.black,
+        fontSize: 25,
+        fontWeight: FontWeight.bold
+      )
+    ),
     primaryColor: AppColors.primary,
     hintColor: AppColors.hint,
     brightness: Brightness.light,

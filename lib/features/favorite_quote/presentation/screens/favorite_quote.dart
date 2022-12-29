@@ -1,4 +1,3 @@
-import 'package:clean_arch1/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 class FavoriteQuoteScreen extends StatefulWidget {

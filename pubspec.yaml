@@ -15,6 +15,9 @@ dependencies:
   bloc:
   flutter_bloc:
   toast: ^0.3.0
+  http:
+  equatable:
+  dartz:
 
   cupertino_icons: ^1.0.2
 

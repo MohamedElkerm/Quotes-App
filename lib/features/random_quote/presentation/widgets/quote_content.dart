@@ -1,5 +1,6 @@
 import 'package:clean_arch1/core/utils/app_colors.dart';
 import 'package:clean_arch1/core/utils/app_strings.dart';
+import 'package:clean_arch1/core/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class QuoteContent extends StatelessWidget {
@@ -46,7 +47,8 @@ class QuoteContent extends StatelessWidget {
           backgroundColor: AppColors.primary,
           child: IconButton(
             onPressed: (){
-              print('New Quote');
+              Constants.initToast(context);
+              Constants.showToast(msg: 'msg');
             },
             icon:const Icon(Icons.replay,color: Colors.white),
           ),

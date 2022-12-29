@@ -19,7 +19,7 @@ class AppRoutes{
         return undefinedRoute();
     }
   }
-  static Route<dynamic>undefinedRoute(){
+  static Route<dynamic> undefinedRoute(){
     return MaterialPageRoute(builder: (context)=>const Scaffold(
       body: Center(
         child: Text(AppStrings.defaultPage),

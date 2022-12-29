@@ -14,7 +14,7 @@ class _QuoteScreenState extends State<QuoteScreen> {
   Widget _buildBodyContext(){
     return Column(
       children:const [
-        QuoteContent()
+        QuoteContent(),
       ],
     );
   }

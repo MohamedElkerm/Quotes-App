@@ -4,7 +4,7 @@ import 'package:clean_arch1/features/random_quote/domain/entities/quote.dart';
 import 'package:clean_arch1/features/random_quote/domain/repositries/quote_repository.dart';
 import 'package:dartz/dartz.dart';
 
-class GetRandomQuote implements UseCase<Quote,NoParams>{
+class GetRandomQuote implements UseCase<Quote, NoParams> {
   final QuoteRepository quoteRepository;
 
   GetRandomQuote({required this.quoteRepository});
@@ -12,5 +12,4 @@ class GetRandomQuote implements UseCase<Quote,NoParams>{
   Future<Either<Failure, Quote>>? call(NoParams params) {
     return quoteRepository.getRandomQuote();
   }
-
 }

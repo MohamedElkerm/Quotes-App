@@ -18,6 +18,8 @@ dependencies:
   http:
   equatable:
   dartz:
+  internet_connection_checker:
+  shared_preferences:
 
   cupertino_icons: ^1.0.2
 
